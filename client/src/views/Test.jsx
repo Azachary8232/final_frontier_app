@@ -1,18 +1,29 @@
-import React from 'react';
+// import React from 'react';
+// import { TravelerEffect, MosaicGroundEffect, OceanEffect, RainEffect, SeaWaveEffect, SnowFallEffect, SnowFallSlowEffect, SpacingEffect, CloudWaveEffect } from 'react-background-animation'
 
 
 
-const Test = (props) => {
+// const Test = (props) => {
 
 
-    return(
-        <div>
-            <h1>Hello</h1>
-        </div>
-    )
+//     return(
+//         <div>
+//             <React.Fragment>
+//                 <TravelerEffect />
+//                 <MosaicGroundEffect />
+//                 <OceanEffect />
+//                 <RainEffect />
+//                 <SeaWaveEffect />
+//                 <SnowFallEffect />
+//                 <SnowFallSlowEffect />
+//                 <SpacingEffect />
+//                 <CloudWaveEffect />
+//             </React.Fragment>
+//         </div>
+//     )
 
 
 
 
-}
-export default Test;
+// }
+// export default Test;

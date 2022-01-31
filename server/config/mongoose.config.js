@@ -1,9 +1,9 @@
-// const mongoose = require("mongoose");
-// const DB_NAME = "DbNAME_db"
+const mongoose = require("mongoose");
+const Frontier_db = "Final_Frontier_db"
 
-// mongoose.connect("mongodb://localhost/" + DB_NAME, {
-// 	useNewUrlParser: true,
-// 	useUnifiedTopology: true,
-// })
-// 	.then(() => console.log(`Established a connection to ${DB_NAME}`))
-// 	.catch(err => console.log("Something went wrong when connecting to the database", err));
+mongoose.connect("mongodb://localhost/" + Frontier_db, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+})
+	.then(() => console.log(`Established a connection to ${Frontier_db}`))
+	.catch(err => console.log("Something went wrong when connecting to the database", err));
