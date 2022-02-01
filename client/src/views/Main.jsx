@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/style.css';
 
+import DropDown from '../components/DropDown';
+
 
 const Main = (props) => {
 
@@ -8,52 +10,56 @@ const Main = (props) => {
 return(
     <div className='container2'>
         <div className='lego navBar my-3'>
-            {/* NavBar Component */}
+        {/* NavBar Component */}
         </div>
         <div className="mainContainer flex spaceBetween py-3">
-            {/* Container */}
+        {/* Container */}
             <div className="column">
-                {/* left column */}
+            {/* left column */}
                 <div className="box border2">
-                    {/* Upper Box */}
+                {/* Upper Box */}
                     <div className="drop lego">
-                        {/* Drop Down Component */}
+                    {/* Drop Down Component */}
+                        <DropDown/>
                     </div>
                     <div>
-                        {/* Carousel Component */}
+                    {/* Carousel Component */}
                     </div>
                 </div>
                 <div className="box border2 my-5">
-                    {/* Lower Box */}
+                {/* Lower Box */}
                     <div className="drop lego">
-                        {/* Drop Down Component */}
+                    {/* Drop Down Component */}
+                        <DropDown/>
                     </div>
                     <div>
-                        {/* Carousel Component */}
+                    {/* Carousel Component */}
                     </div>
                 </div>
             </div>
             <div className="display lego">
-                {/* display */}
+            {/* display */}
             </div>
             <div className="lego column">
-                {/* right column */}
+            {/* right column */}
                 <div className="box border2">
-                    {/* Upper Box */}
+                {/* Upper Box */}
                     <div className="drop lego">
-                        {/* Drop Down Component */}
+                    {/* Drop Down Component */}
+                        <DropDown/>
                     </div>
                     <div>
-                        {/* Carousel Component */}
+                    {/* Carousel Component */}
                     </div>
                 </div>
                 <div className="box border2 my-5">
-                    {/* Lower Box */}
+                {/* Lower Box */}
                     <div className="drop lego">
-                        {/* Drop Down Component */}
+                    {/* Drop Down Component */}
+                        <DropDown/>
                     </div>
                     <div>
-                        {/* Carousel Component*/}
+                    {/* Carousel Component*/}
                     </div>
                 </div>
             </div>

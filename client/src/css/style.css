@@ -94,3 +94,8 @@ display: flex;
 .drop{
     height: 20%;
 }
+
+.dropDown{
+    width: 100%;
+    height: 50px;
+}
