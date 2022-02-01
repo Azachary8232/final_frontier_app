@@ -6,7 +6,7 @@ const DropDown = (props) =>{
 
     return(
         <div>
-            <select name="" id=""  className="dropDown">
+            <select name="" id=""  className="dropDown border2">
                 <option value="">Test1</option>
                 <option value="">Test2</option>
                 <option value="">Test3</option>
