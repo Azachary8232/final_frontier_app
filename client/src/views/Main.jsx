@@ -2,11 +2,14 @@ import React from 'react'
 import '../css/style.css';
 
 import DropDown from '../components/DropDown';
-import Carousel from '../components/Carousel';
+import Carousel from './Carousel';
 
 
 const Main = (props) => {
 
+    const shuttle = "https://www.nasa.gov/sites/default/files/images/596774main_ED09-0253-02.jpg"
+    const neil = "https://m.media-amazon.com/images/M/MV5BNjc2NDI5NzAzMV5BMl5BanBnXkFtZTcwMzM2OTQyOA@@._V1_UY264_CR15,0,178,264_AL_.jpg"
+    const fighter = "https://lumiere-a.akamaihd.net/v1/images/vaders-tie-fighter_8bcb92e1.jpeg?region=0%2C196%2C1560%2C780"
 
 return(
     <div className='container2'>
@@ -25,7 +28,7 @@ return(
                     </div>
                     <div>
                     {/* Carousel Component */}
-                    <Carousel/>
+                    <Carousel shuttle= {shuttle }/>
                     </div>
                 </div>
                 <div className="box my-5">
@@ -36,7 +39,7 @@ return(
                     </div>
                     <div>
                     {/* Carousel Component */}
-                    <Carousel/>
+                    <Carousel shuttle={neil}/>
                     </div>
                 </div>
             </div>
@@ -53,7 +56,7 @@ return(
                     </div>
                     <div>
                     {/* Carousel Component */}
-                    <Carousel/>
+                    <Carousel shuttle={fighter}/>
                     </div>
                 </div>
                 <div className="box my-5">
