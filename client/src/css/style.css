@@ -72,3 +72,25 @@ display: flex;
     box-shadow: 2px 3px black;
     border: 3px solid black;
 }
+
+
+
+.navBar{
+    height: 75px;
+}
+.mainContainer{
+    height: 900px;
+}
+.column{
+    width: 25%;
+}
+.display{
+    width: 40%;
+    height: 66%
+}
+.box{
+    height: 30%;
+}
+.drop{
+    height: 20%;
+}

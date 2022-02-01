@@ -6,27 +6,26 @@ const Main = (props) => {
 
 
 return(
-    <div>
-        <h1>Main Page</h1>
-        <div className='container2 lego'>
+    <div className='container2'>
+        <div className='lego navBar my-3'>
             {/* NavBar Component */}
         </div>
-        <div>
+        <div className="mainContainer flex spaceBetween py-3">
             {/* Container */}
-            <div>
+            <div className="column">
                 {/* left column */}
-                <div>
+                <div className="box border2">
                     {/* Upper Box */}
-                    <div>
+                    <div className="drop lego">
                         {/* Drop Down Component */}
                     </div>
                     <div>
                         {/* Carousel Component */}
                     </div>
                 </div>
-                <div>
+                <div className="box border2 my-5">
                     {/* Lower Box */}
-                    <div>
+                    <div className="drop lego">
                         {/* Drop Down Component */}
                     </div>
                     <div>
@@ -34,23 +33,23 @@ return(
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="display lego">
                 {/* display */}
             </div>
-            <div>
+            <div className="lego column">
                 {/* right column */}
-                <div>
+                <div className="box border2">
                     {/* Upper Box */}
-                    <div>
+                    <div className="drop lego">
                         {/* Drop Down Component */}
                     </div>
                     <div>
                         {/* Carousel Component */}
                     </div>
                 </div>
-                <div>
+                <div className="box border2 my-5">
                     {/* Lower Box */}
-                    <div>
+                    <div className="drop lego">
                         {/* Drop Down Component */}
                     </div>
                     <div>
