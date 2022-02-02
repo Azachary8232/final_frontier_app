@@ -8,14 +8,14 @@ import PlanetData from '../components/PlanetData';
 
 const Main = (props) => {
     
-    const [planets, setPlanets]= useState([]);
-    console.log(planets);
+    const [planet, setPlanet]= useState();
+
     
     
     
     return(
         <div className='container2'>
-        <div className='border2 navBar my-3'>
+        <div className='border2 navBar'>
         {/* NavBar Component */}
         </div>
         <div className="mainContainer flex spaceBetween py-3">
@@ -24,13 +24,9 @@ const Main = (props) => {
             {/* left column */}
                 <div className="box">
                 {/* Upper Box */}
-                    <div className="drop">
-                    {/* Drop Down Component */}
-                        <DropDown/>
-                    </div>
                     <div>
                     {/* Carousel Component */}
-                    <NewCarousel planet= {planets}/>
+                    <PlanetData planet = {planet}/>
                     </div>
                 </div>
                 <div className="box my-5">

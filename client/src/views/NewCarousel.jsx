@@ -37,10 +37,10 @@ const NewCarousel = (props) => {
             image : saturn
         }
     ]
-    function Item(props) {
+    function Item(planets) {
         return (
             <Paper>
-                <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
+                <img src={planets.item.image}  style={{height: 200, width: "100%"}} alt="" />
             </Paper>
         )
     }

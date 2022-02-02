@@ -1,7 +1,9 @@
 
-import './App.css';
+// import './App.css';
+import './css/style.css';
+
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Main from './views/Main';
 import Test from './views/Test'
@@ -9,11 +11,12 @@ import Test from './views/Test'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container2 p-5"
+      style={{ color: "dodgerblue", position: "absolute", left: "5%" }} >
       <BrowserRouter>
         <Switch>
           <Route to='/main'>
-            <Main/>
+            <Main />
           </Route>
           {/* <Route to='/test'>
             <Test/>
