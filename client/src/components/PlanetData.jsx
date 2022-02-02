@@ -1,6 +1,6 @@
-import React from 'react';
-import Carousel from 'react-material-ui-carousel'
-import { Paper, Button } from '@mui/material'
+import React, {useState} from 'react';
+
+import Main from '../views/Main';
 
 import neptune from '../img_planets/neptune.jpg';
 import earth from '../img_planets/earth.jpg';
@@ -10,12 +10,12 @@ import saturn from '../img_planets/saturn.jpg';
 
 
 
+const PlanetData = (props) => {
 
+    const [planets, setPlanets] = useState()
+    console.log(planets);
 
-
-const NewCarousel = (props) => {
-
-    let items = [
+    const newPlanets = [
         {
             name: "Random Name #1",
             description: "Probably the most random thing you have ever seen!",
@@ -37,21 +37,16 @@ const NewCarousel = (props) => {
             image : saturn
         }
     ]
-    function Item(props) {
-        return (
-            <Paper>
-                <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
-            </Paper>
-        )
-    }
-    return (
-        <div style= {{width: "auto", height: 200}}>
-            <Carousel interval={3000}>
-                {
-                    items.map((item, i) => <Item key={i} item={item} />)
-                }
-            </Carousel>
-        </div>
-    )
-}
-export default NewCarousel;
+
+    setPlanets(newPlanets);
+
+
+
+
+
+    return  
+
+    <>{planets}</>
+
+} 
+export default PlanetData;
