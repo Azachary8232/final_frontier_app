@@ -3,15 +3,17 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import neptune from '../img_planets/neptune.jpg';
-import earth from '../img_planets/earth.jpg';
-import mercury from '../img_planets/mercury.jpg';
-import saturn from '../img_planets/saturn.jpg';
+import neptune from '../img/planets/neptune.jpg';
+import earth from '../img/planets/earth.jpg';
+import mercury from '../img/planets/mercury.jpg';
+import saturn from '../img/planets/saturn.jpg';
 
 
 
 
 const IssData = (props) => {
+
+    
 
     // DATA shared to and from MAIN
     const {planet, setPlanet, isChanged, setIsChanged} = props 
@@ -51,6 +53,7 @@ const IssData = (props) => {
     const handleClick = (id) => {
         setPlanet(id);
         setIsChanged(!isChanged);
+        console.log(planet)
 
     }
 
@@ -73,7 +76,7 @@ const IssData = (props) => {
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>
-                <Carousel interval={3000}>
+                <Carousel interval={3200}>
                     {
                         items.map((item, i) => <Item key={i} item={item} />)
                     }

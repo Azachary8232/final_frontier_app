@@ -11,7 +11,7 @@ import Test from './views/Test'
 
 function App() {
   return (
-    <div className="App container2 p-5"
+    <div className="App container2 p-3"
       style={{ color: "dodgerblue", position: "absolute", left: "5%" }} >
       <BrowserRouter>
         <Switch>

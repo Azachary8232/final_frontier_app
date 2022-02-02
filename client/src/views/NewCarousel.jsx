@@ -2,10 +2,10 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import neptune from '../img_planets/neptune.jpg';
-import earth from '../img_planets/earth.jpg';
-import mercury from '../img_planets/mercury.jpg';
-import saturn from '../img_planets/saturn.jpg';
+import neptune from '../img/planets/neptune.jpg';
+import earth from '../img/planets/earth.jpg';
+import mercury from '../img/planets/mercury.jpg';
+import saturn from '../img/planets/saturn.jpg';
 
 
 

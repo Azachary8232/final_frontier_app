@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import neptune from '../img_planets/neptune.jpg';
-import earth from '../img_planets/earth.jpg';
-import mercury from '../img_planets/mercury.jpg';
-import saturn from '../img_planets/saturn.jpg';
+import atlantis from '../img/craft/atlantis.jpg';
+import columbia from '../img/craft/columbia.jpg';
+import iss from '../img/craft/iss.jpg';
+import spaceX from '../img/craft/spaceX.jpg';
 
 
 
@@ -22,28 +22,28 @@ const CraftData = (props) => {
         {
             name: "Random Name #1",
             description: "Probably the most random thing you have ever seen!",
-            image : earth
+            image : columbia
         },
         {
             name: "Random Name #2",
             description: "Hello World!",
-            image : neptune
+            image : atlantis
         },
         {
             name: "Random Name #3",
             description: "Hello Dolly!",
-            image : mercury
+            image : iss
         },
         {
             name: "Random Name #3",
             description: "Hello Dolly!",
-            image : saturn
+            image : spaceX
         }
     ]
     function Item(props) {
         return (
             <Paper>
-                <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
+                <img src={props.item.image} style={{height: 200, width: "100%"}} alt="" />
             </Paper>
         )
     }
@@ -51,6 +51,7 @@ const CraftData = (props) => {
     const handleClick = (id) => {
         setPlanet(id);
         setIsChanged(!isChanged);
+        console.log(planet)
 
     }
 
@@ -65,17 +66,17 @@ const CraftData = (props) => {
             <div className="my-2">
                 {/* Drop Down Component */}
                 <select className="dropDown" onChange={(e) => handleClick(e.target.value)}>
-                    <option value="">Select Planet</option>
-                    <option value="earth">Earth</option>
-                    <option value="mercury">Mercury</option>
-                    <option value="neptune">Neptune</option>
-                    <option value="saturn">saturn</option>
+                    <option value="">Select Space Craft</option>
+                    <option value="spaceX">SpaceX</option>
+                    <option value="atlantis">Atlantis</option>
+                    <option value="columbia">Columbia</option>
+                    <option value="iss">International Space Station</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>
-                <Carousel interval={3000}>
+                <Carousel interval={2850}>
                     {
-                        items.map((item, i) => <Item key={i} item={item} />)
+                        items.map((item, i) => <Item key={i} item={item}/>)
                     }
                 </Carousel>
             </div>

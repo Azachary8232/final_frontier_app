@@ -3,10 +3,10 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import neptune from '../img_planets/neptune.jpg';
-import earth from '../img_planets/earth.jpg';
-import mercury from '../img_planets/mercury.jpg';
-import saturn from '../img_planets/saturn.jpg';
+import alanShepard from '../img/nasa_astro/alan_shepard.jpg';
+import buzzAldrin from '../img/nasa_astro/buzz_aldrin.jpg';
+import neilArmstrong from '../img/nasa_astro/neil_armstrong.jpg';
+import sallyRide from '../img/nasa_astro/sally_ride.jpg';
 
 
 
@@ -22,22 +22,22 @@ const NasaData = (props) => {
         {
             name: "Random Name #1",
             description: "Probably the most random thing you have ever seen!",
-            image : earth
+            image : alanShepard
         },
         {
             name: "Random Name #2",
             description: "Hello World!",
-            image : neptune
+            image : buzzAldrin
         },
         {
             name: "Random Name #3",
             description: "Hello Dolly!",
-            image : mercury
+            image : neilArmstrong
         },
         {
             name: "Random Name #3",
             description: "Hello Dolly!",
-            image : saturn
+            image : sallyRide
         }
     ]
     function Item(props) {
@@ -65,11 +65,11 @@ const NasaData = (props) => {
             <div className="my-2">
                 {/* Drop Down Component */}
                 <select className="dropDown" onChange={(e) => handleClick(e.target.value)}>
-                    <option value="">Select Planet</option>
-                    <option value="earth">Earth</option>
-                    <option value="mercury">Mercury</option>
-                    <option value="neptune">Neptune</option>
-                    <option value="saturn">saturn</option>
+                    <option value="">Select NASA Astronaut</option>
+                    <option value="alan_shepard">Alan Shepard</option>
+                    <option value="buzz_aldrin">Buzz Aldrin</option>
+                    <option value="sally_ride">Sally Ride</option>
+                    <option value="neil_armstrong">Neil Armstrong</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>

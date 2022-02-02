@@ -4,10 +4,10 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import neptune from '../img_planets/neptune.jpg';
-import earth from '../img_planets/earth.jpg';
-import mercury from '../img_planets/mercury.jpg';
-import saturn from '../img_planets/saturn.jpg';
+import neptune from '../img/planets/neptune.jpg';
+import earth from '../img/planets/earth.jpg';
+import mercury from '../img/planets/mercury.jpg';
+import saturn from '../img/planets/saturn.jpg';
 
 
 
@@ -70,11 +70,11 @@ const PlanetData = (props) => {
                     <option value="earth">Earth</option>
                     <option value="mercury">Mercury</option>
                     <option value="neptune">Neptune</option>
-                    <option value="saturn">saturn</option>
+                    <option value="saturn">Saturn</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>
-                <Carousel interval={3000}>
+                <Carousel interval={2700}>
                     {
                         items.map((item, i) => <Item key={i} item={item} />)
                     }
