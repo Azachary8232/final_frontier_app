@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import '../css/style.css';
 
 import DropDown from '../components/DropDown';
@@ -8,7 +8,10 @@ import PlanetData from '../components/PlanetData';
 
 const Main = (props) => {
     
-    const [planet, setPlanet]= useState();
+    
+    const [planet, setPlanet]= useState("TEST");
+    const [isChanged, setIsChanged] = useState(false);
+
 
     
     
@@ -26,7 +29,7 @@ const Main = (props) => {
                 {/* Upper Box */}
                     <div>
                     {/* Carousel Component */}
-                    <PlanetData planet = {planet}/>
+                    <PlanetData planet = {planet} setPlanet = {setPlanet} isChanged = {isChanged} setIsChanged = {setIsChanged}/>
                     </div>
                 </div>
                 <div className="box my-5">

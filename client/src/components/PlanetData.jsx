@@ -1,6 +1,6 @@
 
 import '../css/style.css';
-import React from 'react';
+import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
@@ -13,6 +13,9 @@ import saturn from '../img_planets/saturn.jpg';
 
 
 const PlanetData = (props) => {
+
+    // DATA shared to and from MAIN
+    const {planet, setPlanet, isChanged, setIsChanged} = props 
 
 
 
@@ -47,8 +50,9 @@ const PlanetData = (props) => {
     }
 
     const handleClick = (id) => {
-        
-        console.log(id)
+        setPlanet(id);
+        setIsChanged(!isChanged);
+
     }
 
 
