@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../css/style.css';
 
-import DropDown from '../components/DropDown';
-import NewCarousel from './NewCarousel';
 import PlanetData from '../components/PlanetData';
 import NasaData from '../components/NasaData';
 import IssData from '../components/IssData';
@@ -15,12 +13,8 @@ const Main = (props) => {
     const [planet, setPlanet] = useState("TEST");
     const [isChanged, setIsChanged] = useState(false);
 
+    const [displayData, setDisplayData] = useState({});
 
-    useEffect(() => {
-        console.log(planet)
-    },[isChanged]
-
-    );
 
 
 
@@ -28,7 +22,7 @@ const Main = (props) => {
 
     return (
         <div className='container2'>
-            <div className='border2 navBar'>
+            <div className='navBar'>
                 {/* NavBar Component */}
             </div>
             <div className="mainContainer flex spaceBetween py-3">
@@ -39,7 +33,7 @@ const Main = (props) => {
                         {/* Upper Box */}
                         <div>
                             {/* Carousel Component */}
-                            <PlanetData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged} />
+                            <PlanetData displayData={displayData}  />
                         </div>
                     </div>
                     <div className="box my-5">
@@ -50,7 +44,7 @@ const Main = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="display border2">
+                <div className="display">
                     {/* display */}
                 </div>
                 <div className="column">

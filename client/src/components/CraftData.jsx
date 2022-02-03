@@ -20,22 +20,22 @@ const CraftData = (props) => {
 
     let items = [
         {
-            name: "Random Name #1",
+            name: "NASA Shuttle Columbia",
             description: "Probably the most random thing you have ever seen!",
             image : columbia
         },
         {
-            name: "Random Name #2",
-            description: "Hello World!",
-            image : atlantis
-        },
-        {
-            name: "Random Name #3",
+            name: "International Space Station",
             description: "Hello Dolly!",
             image : iss
         },
         {
-            name: "Random Name #3",
+            name: "NASA Shuttle Atlantis",
+            description: "Hello World!",
+            image : atlantis
+        },
+        {
+            name: "SpaceX",
             description: "Hello Dolly!",
             image : spaceX
         }
@@ -44,6 +44,8 @@ const CraftData = (props) => {
         return (
             <Paper>
                 <img src={props.item.image} style={{height: 200, width: "100%"}} alt="" />
+                <p className="carouselDescription">{props.item.name}</p>
+
             </Paper>
         )
     }

@@ -1,8 +1,9 @@
 
 import '../css/style.css';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
+import axios from 'axios';
 
 import neptune from '../img/planets/neptune.jpg';
 import earth from '../img/planets/earth.jpg';
@@ -15,29 +16,31 @@ import saturn from '../img/planets/saturn.jpg';
 const PlanetData = (props) => {
 
     // DATA shared to and from MAIN
-    const {planet, setPlanet, isChanged, setIsChanged} = props 
+    // const {planet, setPlanet, isChanged, setIsChanged} = props 
 
-
+    const [name, setName] = useState();
+    const [moons, setMoons] = useState([]);
+    const [milesAround, setMilesAround] = useState();
+    const [mostMilesFromSun, setMostMilesFromSun] = useState();
+    const [leastMilesFromSun, setLeastMilesFromSun] = useState();
+    
+    
 
     let items = [
         {
-            name: "Random Name #1",
-            description: "Probably the most random thing you have ever seen!",
+            name: "Earth",
             image : earth
         },
         {
-            name: "Random Name #2",
-            description: "Hello World!",
+            name: "Neptune",
             image : neptune
         },
         {
-            name: "Random Name #3",
-            description: "Hello Dolly!",
+            name: "Mercury",
             image : mercury
         },
         {
-            name: "Random Name #3",
-            description: "Hello Dolly!",
+            name: "Saturn",
             image : saturn
         }
     ]
@@ -45,14 +48,20 @@ const PlanetData = (props) => {
         return (
             <Paper>
                 <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
+                <p className="carouselDescription">{props.item.name}</p>
             </Paper>
         )
     }
 
-    const handleClick = (id) => {
-        setPlanet(id);
-        setIsChanged(!isChanged);
-
+    const handleOption = (planet) => {
+        axios.get(`https://api.le-systeme-solaire.net/rest/bodies/${planet}`)
+        .then(res => {
+            setName(res.data.englishName);
+            setMoons(res.data.moons);
+            setMilesAround(res.data.equaRadius);
+            setMostMilesFromSun(res.data.aphelion);
+            setLeastMilesFromSun(res.data.perihelion)
+        })
     }
 
 
@@ -65,12 +74,12 @@ const PlanetData = (props) => {
             {/* Upper Box */}
             <div className="my-2">
                 {/* Drop Down Component */}
-                <select className="dropDown" onChange={(e) => handleClick(e.target.value)}>
-                    <option value="">Select Planet</option>
-                    <option value="earth">Earth</option>
-                    <option value="mercury">Mercury</option>
-                    <option value="neptune">Neptune</option>
-                    <option value="saturn">Saturn</option>
+                <select className="dropDown" onChange={(e) => handleOption(e.target.value)}>
+                    <option className="carouselDescription" value="">Select Planet</option>
+                    <option className="carouselDescription" value="earth">Earth</option>
+                    <option className="carouselDescription" value="mercury">Mercury</option>
+                    <option className="carouselDescription" value="neptune">Neptune</option>
+                    <option className="carouselDescription" value="saturn">Saturn</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>

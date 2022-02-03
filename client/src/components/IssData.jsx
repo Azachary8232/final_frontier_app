@@ -22,22 +22,22 @@ const IssData = (props) => {
 
     let items = [
         {
-            name: "Random Name #1",
+            name: "Kayla Barron",
             description: "Probably the most random thing you have ever seen!",
             image : kayla_barron
         },
         {
-            name: "Random Name #2",
+            name: "Ye Guangfu",
             description: "Hello World!",
             image : ye_guangfu
         },
         {
-            name: "Random Name #3",
+            name: "Thomas Marshburn",
             description: "Hello Dolly!",
             image : thomas_marshburn
         },
         {
-            name: "Random Name #3",
+            name: "Wang Yaping",
             description: "Hello Dolly!",
             image : wang_yaping
         }
@@ -46,6 +46,8 @@ const IssData = (props) => {
         return (
             <Paper>
                 <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
+                <p className="carouselDescription">{props.item.name}</p>
+
             </Paper>
         )
     }

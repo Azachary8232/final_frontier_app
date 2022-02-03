@@ -20,22 +20,22 @@ const NasaData = (props) => {
 
     let items = [
         {
-            name: "Random Name #1",
+            name: "Alan Shepard",
             description: "Probably the most random thing you have ever seen!",
             image : alanShepard
         },
         {
-            name: "Random Name #2",
+            name: "Buzz Aldrin",
             description: "Hello World!",
             image : buzzAldrin
         },
         {
-            name: "Random Name #3",
+            name: "Neil Armstrong",
             description: "Hello Dolly!",
             image : neilArmstrong
         },
         {
-            name: "Random Name #3",
+            name: "Sally Ride",
             description: "Hello Dolly!",
             image : sallyRide
         }
@@ -44,6 +44,7 @@ const NasaData = (props) => {
         return (
             <Paper>
                 <img src={props.item.image}  style={{height: 200, width: "100%"}} alt="" />
+                <p className="carouselDescription">{props.item.name}</p>
             </Paper>
         )
     }
