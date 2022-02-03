@@ -39,14 +39,14 @@ const Main = (props) => {
                         {/* Upper Box */}
                         <div>
                             {/* Carousel Component */}
-                            <CraftData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
+                            <PlanetData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged} />
                         </div>
                     </div>
                     <div className="box my-5">
                         {/* Lower Box */}
                         <div>
                             {/* Carousel Component */}
-                            <PlanetData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged} />
+                            <IssData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Main = (props) => {
                         {/* Upper Box */}
                         <div>
                             {/* Carousel Component */}
-                            <IssData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
+                            <CraftData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
                         </div>
                     </div>
                     <div className="box my-5">
