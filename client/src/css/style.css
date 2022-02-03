@@ -108,3 +108,13 @@ display: flex;
     text-align: center;
     font-weight: bold;
 }
+
+.displayName{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}

@@ -5,6 +5,7 @@ import PlanetData from '../components/PlanetData';
 import NasaData from '../components/NasaData';
 import IssData from '../components/IssData';
 import CraftData from '../components/CraftData';
+import MainDisplay from '../components/MainDisplay';
 
 
 const Main = (props) => {
@@ -13,7 +14,8 @@ const Main = (props) => {
     const [planet, setPlanet] = useState("TEST");
     const [isChanged, setIsChanged] = useState(false);
 
-    const [displayData, setDisplayData] = useState({});
+    const [displayData, setDisplayData] = useState();
+    const [displayMode, setDisplayMode] = useState("");
 
 
 
@@ -33,7 +35,7 @@ const Main = (props) => {
                         {/* Upper Box */}
                         <div>
                             {/* Carousel Component */}
-                            <PlanetData displayData={displayData}  />
+                            <PlanetData setDisplayData={setDisplayData} displayData={displayData}  displayMode={displayMode} setDisplayMode={setDisplayMode} />
                         </div>
                     </div>
                     <div className="box my-5">
@@ -44,8 +46,9 @@ const Main = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="display">
+                <div className="display mt-2">
                     {/* display */}
+                    <MainDisplay displayData={displayData} setDisplayData={setDisplayData} displayMode={displayMode} setDisplayMode={setDisplayMode}/>
                 </div>
                 <div className="column">
                     {/* right column */}

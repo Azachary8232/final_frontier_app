@@ -16,6 +16,7 @@ import saturn from '../img/planets/saturn.jpg';
 const PlanetData = (props) => {
 
     // DATA shared to and from MAIN
+    const { setDisplayData, displayData, displayMode, setDisplayMode} = props;
     // const {planet, setPlanet, isChanged, setIsChanged} = props 
 
     const [name, setName] = useState();
@@ -23,7 +24,11 @@ const PlanetData = (props) => {
     const [milesAround, setMilesAround] = useState();
     const [mostMilesFromSun, setMostMilesFromSun] = useState();
     const [leastMilesFromSun, setLeastMilesFromSun] = useState();
-    
+
+    let newDisplayData = {name, moons, milesAround, mostMilesFromSun, leastMilesFromSun};
+    let anotherData ={
+
+    }
     
 
     let items = [
@@ -56,12 +61,25 @@ const PlanetData = (props) => {
     const handleOption = (planet) => {
         axios.get(`https://api.le-systeme-solaire.net/rest/bodies/${planet}`)
         .then(res => {
-            setName(res.data.englishName);
-            setMoons(res.data.moons);
-            setMilesAround(res.data.equaRadius);
-            setMostMilesFromSun(res.data.aphelion);
-            setLeastMilesFromSun(res.data.perihelion)
+            const newData = {
+                "name" : res.data.englishName,
+                "moons" : res.data.moons,
+                "milesAround" : res.data.equaRadius,
+                "mostMileFromSun" : res.data.aphelion,
+                "leastMilesFromSun" : res.data.perihelion
+            }
+            
+            // setName(res.data.englishName);
+            // setMoons(res.data.moons);
+            // setMilesAround(res.data.equaRadius);
+            // setMostMilesFromSun(res.data.aphelion);
+            // setLeastMilesFromSun(res.data.perihelion);
+            console.log(newData);
+            setDisplayData(newData);
+            setDisplayMode("planets")
         })
+        .catch(() => console.log("ERROR"));
+
     }
 
 

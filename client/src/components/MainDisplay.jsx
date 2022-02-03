@@ -22,8 +22,15 @@ const MainDisplay = (props) => {
             if(displayData.name == "Neptune"){
                 return(
                     <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div>
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            {displayData.moons ? <h6 className="displayName mt-5">Number of Moons: {displayData.moons.length}<br/>
+                            Distance around equator: {displayData.milesAround}(km)<br/>
+                            Furthest distance from the Sun: {displayData.mostMileFromSun} (km)<br/>
+                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6> : <></>}
                         </div>
                     </div>)}
             else if(displayData.name == "Earth"){
