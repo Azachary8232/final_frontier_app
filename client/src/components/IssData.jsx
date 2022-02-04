@@ -3,12 +3,7 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import kayla_barron from '../img/astro_in_space_now/kayla_barron.jpg';
-import thomas_marshburn from '../img/astro_in_space_now/thomas_marshburn.jpg';
-import wang_yaping from '../img/astro_in_space_now/wang_yaping.jpg';
-import ye_guangfu from '../img/astro_in_space_now/ye_guangfu.jpg';
-
-
+import {KaylaBarron, ThomasMarshburn,WangYaping, YeGuangfu} from '../img/importImgs';
 
 
 const IssData = (props) => {
@@ -26,7 +21,7 @@ const IssData = (props) => {
             age: 34,
             from: "Pocatello, ID",
             spaceMissions : "SpaceX Crew-3",
-            image : kayla_barron
+            image : KaylaBarron
         },
         {
             id: "ye_guangfu",
@@ -34,7 +29,7 @@ const IssData = (props) => {
             age : 41,
             from : "Chengdu, China", 
             spaceMissions : "Shenzhou 13",
-            image : ye_guangfu
+            image : YeGuangfu
         },
         {
             id: "thomas_marshburn",
@@ -42,7 +37,7 @@ const IssData = (props) => {
             age : 61,
             from : "Statesville, NC", 
             spaceMissions : "SpaceX Crew-3, STS-127, Expedition 34, Expedition 35, Soyuz TMA-07M",
-            image : thomas_marshburn
+            image : ThomasMarshburn
         },
         {
             id: "wang_yaping",
@@ -50,7 +45,7 @@ const IssData = (props) => {
             age : 42,
             from : "Yanti, China", 
             spaceMissions : "Shenzhou 13, Shenzhou 10",
-            image : wang_yaping
+            image : WangYaping
         }
     ]
     function Item(props) {

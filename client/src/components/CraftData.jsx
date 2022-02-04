@@ -3,10 +3,7 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import atlantis from '../img/craft/atlantis.jpg';
-import columbia from '../img/craft/columbia.jpg';
-import iss from '../img/craft/iss.jpg';
-import spaceX from '../img/craft/spaceX.jpg';
+import {Atlantis, Columbia, ISS, SpaceX} from '../img/importImgs';
 
 
 
@@ -26,7 +23,7 @@ const CraftData = (props) => {
             firstFlight : "April 12th, 1981",
             lastFlight : "January 16th, 2003",
             missions : 28,
-            image : columbia
+            image : Columbia
         },
         {
             id: "iss",
@@ -35,7 +32,7 @@ const CraftData = (props) => {
             lastFlight : "Still orbiting",
             description: "A multinational collaborative project involving five participating space agencies",
             missions : 1,
-            image : iss
+            image : ISS
         },
         {
             id: "atlantis",
@@ -44,7 +41,7 @@ const CraftData = (props) => {
             firstFlight : "October 3rd, 1985",
             lastFlight : "July 8th, 2011",
             missions : 33,
-            image : atlantis
+            image : Atlantis
         },
         {
             id: "spaceX",
@@ -53,7 +50,7 @@ const CraftData = (props) => {
             firstFlight : "October 8th, 2012",
             lastFlight : "December 21st, 2021",
             missions : 23,
-            image : spaceX
+            image : SpaceX
         }
     ]
     function Item(props) {

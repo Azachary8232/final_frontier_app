@@ -7,13 +7,13 @@ const NavBar = () => {
     return(
         <div className="flex spaceAround">
             <div>
-                <Link>Space Info</Link>
+                <Link to="/">Space Info</Link>
             </div>
             <div>
                 <h1>The Final Frontier</h1>
             </div>
             <div>
-                <Link>Solar System</Link>
+                <Link to="/solarsystem">Solar System</Link>
             </div>
 
         </div>

@@ -5,10 +5,7 @@ import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 import axios from 'axios';
 
-import neptune from '../img/planets/neptune.jpg';
-import earth from '../img/planets/earth.jpg';
-import mercury from '../img/planets/mercury.jpg';
-import saturn from '../img/planets/saturn.jpg';
+import {Neptune, Earth, Mercury, Saturn} from '../img/importImgs';
 
 
 
@@ -22,19 +19,19 @@ const PlanetData = (props) => {
     let items = [
         {
             name: "Earth",
-            image : earth
+            image : Earth
         },
         {
             name: "Neptune",
-            image : neptune
+            image : Neptune
         },
         {
             name: "Mercury",
-            image : mercury
+            image : Mercury
         },
         {
             name: "Saturn",
-            image : saturn
+            image : Saturn
         }
     ]
     function Item(props) {

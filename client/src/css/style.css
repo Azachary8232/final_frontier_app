@@ -112,14 +112,9 @@ display: flex;
 }
 
 .displayName{
-    position: absolute;
-    width: 30%;
-    left: 0;
-    right: 0;
     margin: auto;
     color: white;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
 }
 
 

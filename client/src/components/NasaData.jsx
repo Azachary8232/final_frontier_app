@@ -3,10 +3,7 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import alanShepard from '../img/nasa_astro/alan_shepard.jpg';
-import buzzAldrin from '../img/nasa_astro/buzz_aldrin.jpg';
-import neilArmstrong from '../img/nasa_astro/neil_armstrong.jpg';
-import sallyRide from '../img/nasa_astro/sally_ride.jpg';
+import {AlanShepard, BuzzAldrin, NeilArmstrong, SallyRide} from '../img/importImgs';
 
 
 
@@ -22,10 +19,10 @@ const NasaData = (props) => {
         {
             id: "alan_shepard",
             name: "Alan Shepard",
-            born : "November 18th, 1923 Age:(74)",
+            born : "November 18th, 1923 Died: age(74)",
             from: "Pebble Beach, CA",
             spaceMissions : "Apollo 14, Mercury-Redstone 3",
-            image : alanShepard
+            image : AlanShepard
         },
         {
             id: "buzz_aldrin",
@@ -33,23 +30,23 @@ const NasaData = (props) => {
             born : "January 20th, 1930",
             from: "Montclair, NJ",
             spaceMissions : "Apollo 11, Gemini 12",
-            image : buzzAldrin
+            image : BuzzAldrin
         },
         {
             id: "neil_armstrong",
             name: "Neil Armstrong",
-            born : "August 5th, 1930 Age:(82)",
+            born : "August 5th, 1930 Died: age(82)",
             from: "Cincinnati, OH",
             spaceMissions : "Apollo 11, Gemini8",
-            image : neilArmstrong
+            image : NeilArmstrong
         },
         {
             id: "sally_ride",
             name: "Sally Ride",
-            born : "May 26th, 1951 Age:(61)",
+            born : "May 26th, 1951 Died: age(61)",
             from: "La Jolla, CA",
             spaceMissions : "STS-7, STS-41-G",
-            image : sallyRide
+            image : SallyRide
         }
     ]
     function Item(props) {
