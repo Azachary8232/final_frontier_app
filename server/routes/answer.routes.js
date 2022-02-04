@@ -18,5 +18,6 @@ app.get("/api/answers/", AnswerController.findAllAnswers);
 
             // ******Delete******
 
+app.delete("/api/answers/delete/:id", AnswerController.deleteAnExistingAnswer);
 
 };

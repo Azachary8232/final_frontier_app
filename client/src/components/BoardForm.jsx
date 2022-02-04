@@ -21,6 +21,8 @@ const BoardForm = (props) => {
         })
         .then(res=>{
             console.log(res.data.answer);
+            setQuestion1("");
+            setQuestion2("");
             setRefresh(!refresh)
         })
         .catch(err=>{
@@ -39,7 +41,7 @@ const BoardForm = (props) => {
     return (
         <div className="marginAuto my-3">
             <form onSubmit={createMessage}>
-                {errors.map((err, index) => <p key={index}>{err}</p>)}
+                {errors.map((err, index) => <p key={index} className="error">{err}</p>)}
                 <div className="input-group mb-3">
                     <label>What are some ideas for additional features or user stories that we might add to improve on our project for our portfolio?</label>
                     <textarea className="my-2" value={question1} onChange={(e)=> setQuestion1(e.target.value)} cols="90" rows="5"></textarea>

@@ -27,5 +27,9 @@ module.exports.findAllAnswers = (req, res) => {
 
                 // ******Delete******
         
-
+module.exports.deleteAnExistingAnswer = (req, res) => {
+        Answer.deleteOne({ _id: req.params.id })
+                .then(result => res.json({ result: result }))
+                .catch(err => res.json({ message: "Something went wrong", error: err }));
+};
 
