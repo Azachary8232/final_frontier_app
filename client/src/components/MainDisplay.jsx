@@ -187,6 +187,60 @@ const MainDisplay = (props) => {
                         </div>
                     </div>)}
         }
+        else if( displayMode == "nasaAstro"){
+            if(displayData.name == "Alan Shepard"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Born: {displayData.born}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Buzz Aldrin"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Born: {displayData.born}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Neil Armstrong"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Born: {displayData.born}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Sally Ride"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Born: {displayData.born}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+        }
 
 
         else{

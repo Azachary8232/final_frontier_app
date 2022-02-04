@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../css/style.css';
 
+import NavBar from "../components/NavBar";
 import PlanetData from '../components/PlanetData';
 import NasaData from '../components/NasaData';
 import IssData from '../components/IssData';
@@ -27,8 +28,9 @@ const Main = (props) => {
 
     return (
         <div className='container2'>
-            <div className='navBar'>
+            <div className='navBar textAlign'>
                 {/* NavBar Component */}
+                <NavBar />
             </div>
             <div className="mainContainer flex spaceBetween py-3">
                 {/* Container */}

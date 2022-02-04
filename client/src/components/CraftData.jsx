@@ -84,11 +84,11 @@ const CraftData = (props) => {
             <div className="my-2">
                 {/* Drop Down Component */}
                 <select className="dropDown" onChange={(e) => handleClick(e.target.value)}>
-                    <option value="">Select Space Craft</option>
-                    <option value="spaceX">SpaceX</option>
-                    <option value="atlantis">Atlantis</option>
-                    <option value="columbia">Columbia</option>
-                    <option value="iss">International Space Station</option>
+                    <option className="carouselDescription" value="">Select Space Craft</option>
+                    <option className="carouselDescription" value="spaceX">SpaceX</option>
+                    <option className="carouselDescription" value="atlantis">Atlantis</option>
+                    <option className="carouselDescription" value="columbia">Columbia</option>
+                    <option className="carouselDescription" value="iss">International Space Station</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>

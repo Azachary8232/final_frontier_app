@@ -83,11 +83,11 @@ const IssData = (props) => {
             <div className="my-2">
                 {/* Drop Down Component */}
                 <select className="dropDown mt-4" onChange={(e) => handleOption(e.target.value)}>
-                    <option value="">Select ISS Astronaut</option>
-                    <option value="kayla_barron">Kayla Barron</option>
-                    <option value="thomas_marshburn">Thomas Marshburn</option>
-                    <option value="wang_yaping">Wang Yaping</option>
-                    <option value="ye_guangfu">Ye Guangfu</option>
+                    <option className="carouselDescription" value="">Select ISS Astronaut</option>
+                    <option className="carouselDescription" value="kayla_barron">Kayla Barron</option>
+                    <option className="carouselDescription" value="thomas_marshburn">Thomas Marshburn</option>
+                    <option className="carouselDescription" value="wang_yaping">Wang Yaping</option>
+                    <option className="carouselDescription" value="ye_guangfu">Ye Guangfu</option>
                 </select>
             </div>
             <div style={{ width: "auto", height: 200 }}>
