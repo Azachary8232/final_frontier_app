@@ -117,5 +117,10 @@ display: flex;
     text-align: center;
 }
 
+.table6{
+    overflow: auto;
+    height: 300px;
+}
+
 
 

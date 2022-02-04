@@ -14,7 +14,7 @@ const NavBar = () => {
                 <h1>The Final Frontier</h1>
             </div>
             <div  className="mt-3">
-                <Link to="/solarsystem">Click Here To Share Your Thoughts</Link>
+                <Link to="/messageboard">Click Here To Share Your Thoughts</Link>
             </div>
 
         </div>

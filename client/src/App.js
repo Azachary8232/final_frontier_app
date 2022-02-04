@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Main from './views/Main';
 import SolarSystem from './views/SolarSystem'
+import MessageBoard from './views/MessageBoard'
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route exact path='/solarsystem'>
             <SolarSystem/>
+          </Route>
+          <Route exact path='/messageboard'>
+            <MessageBoard/>
           </Route>
         </Switch>
       </BrowserRouter>
