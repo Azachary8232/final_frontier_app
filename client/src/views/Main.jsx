@@ -17,6 +17,9 @@ const Main = (props) => {
     const [displayData, setDisplayData] = useState();
     const [displayMode, setDisplayMode] = useState("");
 
+    console.log(displayData);
+    console.log(displayMode);
+
 
 
 
@@ -42,7 +45,7 @@ const Main = (props) => {
                         {/* Lower Box */}
                         <div>
                             {/* Carousel Component */}
-                            <IssData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
+                            <IssData setDisplayData={setDisplayData} displayData={displayData}  displayMode={displayMode} setDisplayMode={setDisplayMode} />
                         </div>
                     </div>
                 </div>
@@ -56,7 +59,7 @@ const Main = (props) => {
                         {/* Upper Box */}
                         <div>
                             {/* Carousel Component */}
-                            <CraftData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
+                            <CraftData setDisplayData={setDisplayData} displayData={displayData}  displayMode={displayMode} setDisplayMode={setDisplayMode} />
                         </div>
                     </div>
                     <div className="box my-5">

@@ -111,6 +111,7 @@ display: flex;
 
 .displayName{
     position: absolute;
+    width: 30%;
     left: 0;
     right: 0;
     margin: auto;
@@ -118,3 +119,4 @@ display: flex;
     display: flex;
     justify-content: space-around;
 }
+

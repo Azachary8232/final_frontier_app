@@ -14,29 +14,45 @@ import spaceX from '../img/craft/spaceX.jpg';
 const CraftData = (props) => {
 
     // DATA shared to and from MAIN
-    const {planet, setPlanet, isChanged, setIsChanged} = props 
+    const { setDisplayData, displayData, displayMode, setDisplayMode} = props;
 
 
 
     let items = [
         {
+            id: "columbia",
             name: "NASA Shuttle Columbia",
-            description: "Probably the most random thing you have ever seen!",
+            description: "Space Shuttle Orbiter",
+            firstFlight : "April 12th, 1981",
+            lastFlight : "January 16th, 2003",
+            missions : 28,
             image : columbia
         },
         {
+            id: "iss",
             name: "International Space Station",
+            firstFlight : "November 20, 1998",
+            lastFlight : "Still orbiting",
             description: "Hello Dolly!",
+            missions : 1,
             image : iss
         },
         {
+            id: "atlantis",
             name: "NASA Shuttle Atlantis",
-            description: "Hello World!",
+            description: "Space Shuttle Orbiter",
+            firstFlight : "October 3rd, 1985",
+            lastFlight : "July 8th, 2011",
+            missions : 33,
             image : atlantis
         },
         {
-            name: "SpaceX",
-            description: "Hello Dolly!",
+            id: "spaceX",
+            name: "Dragon",
+            description: "Partially reusable cargo spacecraft",
+            firstFlight : "October 8th, 2012",
+            lastFlight : "December 21st, 2021",
+            missions : 23,
             image : spaceX
         }
     ]
@@ -50,11 +66,11 @@ const CraftData = (props) => {
         )
     }
 
-    const handleClick = (id) => {
-        setPlanet(id);
-        setIsChanged(!isChanged);
-        console.log(planet)
-
+    const handleClick = (craft) => {
+        const newData = items.filter((item) => item.id == craft);
+        console.log(newData[0]);
+        setDisplayData(newData[0]);
+        setDisplayMode("craft")
     }
 
 

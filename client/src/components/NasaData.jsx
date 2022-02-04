@@ -65,7 +65,7 @@ const NasaData = (props) => {
             {/* Upper Box */}
             <div className="my-2">
                 {/* Drop Down Component */}
-                <select className="dropDown" onChange={(e) => handleClick(e.target.value)}>
+                <select className="dropDown mt-4" onChange={(e) => handleClick(e.target.value)}>
                     <option value="">Select NASA Astronaut</option>
                     <option value="alan_shepard">Alan Shepard</option>
                     <option value="buzz_aldrin">Buzz Aldrin</option>

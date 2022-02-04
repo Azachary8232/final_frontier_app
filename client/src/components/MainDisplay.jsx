@@ -15,9 +15,8 @@ const MainDisplay = (props) => {
     const { displayData, setDisplayData, displayMode, setDisplayMode} = props;
     
 
-    const selections = () => {
-        // 
-        console.log(displayData)
+    const selections = () => {  
+        console.log(displayData.name)
         if( displayMode == "planets"){
             if(displayData.name == "Neptune"){
                 return(
@@ -27,28 +26,165 @@ const MainDisplay = (props) => {
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div>
-                            {displayData.moons ? <h6 className="displayName mt-5">Number of Moons: {displayData.moons.length}<br/>
+                            <h6 className="displayName mt-5">{displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
                             Distance around equator: {displayData.milesAround}(km)<br/>
                             Furthest distance from the Sun: {displayData.mostMileFromSun} (km)<br/>
-                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6> : <></>}
+                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6>
                         </div>
                     </div>)}
             else if(displayData.name == "Earth"){
                 return(
                     <div>
-                        <img src={earth} style={{height: "auto", width: "100%"}} alt="" />
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={earth} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">{displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
+                            Distance around equator: {displayData.milesAround}(km)<br/>
+                            Furthest distance from the Sun: {displayData.mostMileFromSun} (km)<br/>
+                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6>
+                        </div>
                     </div>)}
             else if(displayData.name == "Saturn"){
                 return(
                     <div>
-                        <img src={saturn} style={{height: "auto", width: "100%"}} alt="" />
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={saturn} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">{displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
+                            Distance around equator: {displayData.milesAround}(km)<br/>
+                            Furthest distance from the Sun: {displayData.mostMileFromSun} (km)<br/>
+                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6>
+                        </div>
                     </div>)}
             else if(displayData.name == "Mercury"){
                 return(
                     <div>
-                        <img src={mercury} style={{height: "auto", width: "100%"}} alt="" />
-                    </div>)}          
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={mercury} style={{height: "auto", width: "100%"}} alt="" />
+                        </div> 
+                        <div>
+                            <h6 className="displayName mt-5">{displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
+                            Distance around equator: {displayData.milesAround}(km)<br/>
+                            Furthest distance from the Sun: {displayData.mostMileFromSun} (km)<br/>
+                            Closest distance from the Sun: {displayData.leastMilesFromSun} (km)</h6>
+                        </div>       
+                    </div>)} 
         }
+        else if( displayMode == "issAstro"){
+            if(displayData.name == "Kayla Barron"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Ye Guangfu"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Thomas Marshburn"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Wang Yaping"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+        }
+        else if( displayMode == "craft"){
+            if(displayData.name == "Kayla Barron"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Ye Guangfu"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Thomas Marshburn"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+            else if(displayData.name == "Wang Yaping"){
+                return(
+                    <div>
+                        <div><h1 className="displayName">{displayData.name}</h1></div>
+                        <div>
+                            <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
+                        </div>
+                        <div>
+                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
+                            From: {displayData.from}<br/>
+                            Mission to Space: {displayData.spaceMissions}</h6>
+                        </div>
+                    </div>)}
+        }
+
+
         else{
             return(
                 <h1>NOT PLANETS</h1>)}
