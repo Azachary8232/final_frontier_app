@@ -66,7 +66,7 @@ const Main = (props) => {
                         {/* Lower Box */}
                         <div>
                             {/* Carousel Component */}
-                            <NasaData planet={planet} setPlanet={setPlanet} isChanged={isChanged} setIsChanged={setIsChanged}/>
+                            <NasaData setDisplayData={setDisplayData} displayData={displayData}  displayMode={displayMode} setDisplayMode={setDisplayMode} />
                         </div>
                     </div>
                 </div>

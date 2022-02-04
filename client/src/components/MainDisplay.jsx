@@ -130,7 +130,7 @@ const MainDisplay = (props) => {
                     </div>)}
         }
         else if( displayMode == "craft"){
-            if(displayData.name == "Kayla Barron"){
+            if(displayData.name == "NASA Shuttle Columbia"){
                 return(
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
@@ -138,12 +138,13 @@ const MainDisplay = (props) => {
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div>
-                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
-                            From: {displayData.from}<br/>
-                            Mission to Space: {displayData.spaceMissions}</h6>
+                            <h6 className="displayName mt-5">Description: {displayData.description}<br/>
+                            First Flight: {displayData.firstFlight}<br/>
+                            Last Flight: {displayData.lastFlight}<br/>
+                            Missions Flown: {displayData.missions}</h6>
                         </div>
                     </div>)}
-            else if(displayData.name == "Ye Guangfu"){
+            else if(displayData.name == "International Space Station"){
                 return(
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
@@ -151,12 +152,13 @@ const MainDisplay = (props) => {
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div>
-                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
-                            From: {displayData.from}<br/>
-                            Mission to Space: {displayData.spaceMissions}</h6>
+                            <h6 className="displayName mt-5">Description: {displayData.description}<br/>
+                            First Flight: {displayData.firstFlight}<br/>
+                            Last Flight: {displayData.lastFlight}<br/>
+                            Missions Flown: {displayData.missions}</h6>
                         </div>
                     </div>)}
-            else if(displayData.name == "Thomas Marshburn"){
+            else if(displayData.name == "NASA Shuttle Atlantis"){
                 return(
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
@@ -164,12 +166,13 @@ const MainDisplay = (props) => {
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div>
-                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
-                            From: {displayData.from}<br/>
-                            Mission to Space: {displayData.spaceMissions}</h6>
+                            <h6 className="displayName mt-5">Description: {displayData.description}<br/>
+                            First Flight: {displayData.firstFlight}<br/>
+                            Last Flight: {displayData.lastFlight}<br/>
+                            Missions Flown: {displayData.missions}</h6>
                         </div>
                     </div>)}
-            else if(displayData.name == "Wang Yaping"){
+            else if(displayData.name == "SpaceX Dragon"){
                 return(
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
@@ -177,9 +180,10 @@ const MainDisplay = (props) => {
                             <img src={neptune} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div>
-                            <h6 className="displayName mt-5">Age: {displayData.age}<br/>
-                            From: {displayData.from}<br/>
-                            Mission to Space: {displayData.spaceMissions}</h6>
+                            <h6 className="displayName mt-5">Description: {displayData.description}<br/>
+                            First Flight: {displayData.firstFlight}<br/>
+                            Last Flight: {displayData.lastFlight}<br/>
+                            Missions Flown: {displayData.missions}</h6>
                         </div>
                     </div>)}
         }

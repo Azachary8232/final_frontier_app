@@ -33,7 +33,7 @@ const CraftData = (props) => {
             name: "International Space Station",
             firstFlight : "November 20, 1998",
             lastFlight : "Still orbiting",
-            description: "Hello Dolly!",
+            description: "A multinational collaborative project involving five participating space agencies",
             missions : 1,
             image : iss
         },
@@ -48,7 +48,7 @@ const CraftData = (props) => {
         },
         {
             id: "spaceX",
-            name: "Dragon",
+            name: "SpaceX Dragon",
             description: "Partially reusable cargo spacecraft",
             firstFlight : "October 8th, 2012",
             lastFlight : "December 21st, 2021",
