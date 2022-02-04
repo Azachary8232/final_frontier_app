@@ -3,9 +3,13 @@ export const SpaceCat = require('./random/cat.jpg')
 
 //  Current International Space Station Astronaut Images
 export const KaylaBarron = require('./astro_in_space_now/kayla_barron.jpg')
+export const KaylaBarron2 = require('./astro_in_space_now/kayla_barron2.jpg')
 export const ThomasMarshburn = require('./astro_in_space_now/thomas_marshburn.jpg')
+export const ThomasMarshburn2 = require('./astro_in_space_now/thomas_marshburn2.jpg')
 export const WangYaping = require('./astro_in_space_now/wang_yaping.jpg')
+export const WangYaping2 = require('./astro_in_space_now/wang_yaping2.jpg')
 export const YeGuangfu = require('./astro_in_space_now/ye_guangfu.jpg')
+export const YeGuangfu2 = require('./astro_in_space_now/ye_guangfu2.jpg')
 
 //  Space Craft Images
 export const Atlantis = require('./craft/atlantis.jpg')
@@ -22,6 +26,10 @@ export const AlanShepard = require('./nasa_astro/alan_shepard.jpg')
 export const BuzzAldrin = require('./nasa_astro/buzz_aldrin.jpg')
 export const NeilArmstrong = require('./nasa_astro/neil_armstrong.jpg')
 export const SallyRide = require('./nasa_astro/sally_ride.jpg')
+export const SallyRide2 = require('./nasa_astro/sally_ride2.jpg')
+export const AlanShepard2 = require('./nasa_astro/alan_shepard2.jpg')
+export const BuzzAldrin2 = require('./nasa_astro/buzz_aldrin2.jpg')
+export const NeilArmstrong2 = require('./nasa_astro/neil_armstrong2.jpg')
 
 //  Planet Images
 export const Earth = require('./planets/earth.jpg')

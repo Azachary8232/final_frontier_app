@@ -5,15 +5,16 @@ import {Link} from "react-router-dom";
 const NavBar = () => {
 
     return(
-        <div className="flex spaceAround">
-            <div>
+        <div className="flex spaceBetween">
+            <div className="mt-3">
                 <Link to="/">Space Info</Link>
+                <Link to="/solarsystem" className="mx-5">Solar System</Link>
             </div>
             <div>
                 <h1>The Final Frontier</h1>
             </div>
-            <div>
-                <Link to="/solarsystem">Solar System</Link>
+            <div  className="mt-3">
+                <Link to="/solarsystem">Click Here To Share Your Thoughts</Link>
             </div>
 
         </div>

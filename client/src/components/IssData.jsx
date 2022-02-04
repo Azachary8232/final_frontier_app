@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button } from '@mui/material'
 
-import {KaylaBarron, ThomasMarshburn,WangYaping, YeGuangfu} from '../img/importImgs';
+import {KaylaBarron, ThomasMarshburn,WangYaping2, YeGuangfu} from '../img/importImgs';
 
 
 const IssData = (props) => {
@@ -45,7 +45,7 @@ const IssData = (props) => {
             age : 42,
             from : "Yanti, China", 
             spaceMissions : "Shenzhou 13, Shenzhou 10",
-            image : WangYaping
+            image : WangYaping2
         }
     ]
     function Item(props) {

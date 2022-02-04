@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { Atlantis2, Columbia2, ISS2, SpaceX2, Neptune2, Earth2, Mercury2,Saturn2, AlanShepard, BuzzAldrin, NeilArmstrong, SallyRide, KaylaBarron, ThomasMarshburn, WangYaping, YeGuangfu, SpaceCat } from '../img/importImgs';
+import { Atlantis2, Columbia2, ISS2, SpaceX2, Neptune2, Earth2, Mercury2,Saturn2, AlanShepard2, BuzzAldrin2, NeilArmstrong2, SallyRide2, KaylaBarron2, ThomasMarshburn2, WangYaping, YeGuangfu2, SpaceCat } from '../img/importImgs';
 
 
 
@@ -76,7 +76,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={KaylaBarron} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={KaylaBarron2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Age: {displayData.age}</h6>
@@ -89,7 +89,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={YeGuangfu} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={YeGuangfu2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Age: {displayData.age}</h6>
@@ -102,7 +102,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={ThomasMarshburn} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={ThomasMarshburn2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Age: {displayData.age}</h6>
@@ -188,7 +188,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={AlanShepard} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={AlanShepard2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Born: {displayData.born}</h6>
@@ -201,7 +201,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={BuzzAldrin} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={BuzzAldrin2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Born: {displayData.born}</h6>
@@ -214,7 +214,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={NeilArmstrong} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={NeilArmstrong2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Born: {displayData.born}</h6>
@@ -227,7 +227,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={SallyRide} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={SallyRide2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Born: {displayData.born}</h6>
