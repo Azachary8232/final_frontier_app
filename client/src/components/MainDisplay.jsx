@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { Atlantis, Columbia, ISS, SpaceX, Neptune, Earth, Mercury, Saturn, AlanShepard, BuzzAldrin, NeilArmstrong, SallyRide, KaylaBarron, ThomasMarshburn, WangYaping, YeGuangfu, SpaceCat } from '../img/importImgs';
+import { Atlantis2, Columbia2, ISS2, SpaceX2, Neptune2, Earth2, Mercury2,Saturn2, AlanShepard, BuzzAldrin, NeilArmstrong, SallyRide, KaylaBarron, ThomasMarshburn, WangYaping, YeGuangfu, SpaceCat } from '../img/importImgs';
 
 
 
@@ -18,7 +18,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Neptune} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Neptune2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             {displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
@@ -32,7 +32,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Earth} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Earth2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             {displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
@@ -46,7 +46,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Saturn} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Saturn2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             {displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
@@ -60,7 +60,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Mercury} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Mercury2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             {displayData.moons ? <h6>Number of Moons: {displayData.moons.length}</h6>: <h6>Number of Moons: 0</h6>}
@@ -130,7 +130,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Columbia} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Columbia2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Description: {displayData.description}</h6>
@@ -144,7 +144,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={ISS} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={ISS2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Description: {displayData.description}</h6>
@@ -158,7 +158,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={Atlantis} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={Atlantis2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Description: {displayData.description}</h6>
@@ -172,7 +172,7 @@ const MainDisplay = (props) => {
                     <div>
                         <div><h1 className="displayName">{displayData.name}</h1></div>
                         <div className="mt-3">
-                            <img src={SpaceX} style={{height: "auto", width: "100%"}} alt="" />
+                            <img src={SpaceX2} style={{height: "auto", width: "100%"}} alt="" />
                         </div>
                         <div className="displayName mt-3">
                             <h6>Description: {displayData.description}</h6>
